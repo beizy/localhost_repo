@@ -1,39 +1,44 @@
-defaultStorageMapping: STG
+defaultStorageMapping: SRC
 jobs: {}
 locations:
-  QA:
+  DATAMART:
     mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
-      "5":
-        database: BEI_LOCALHOST
-        schema: PROD_STAGING
       "6":
         database: BEI_LOCALHOST
-        schema: QA_STAGING
-  SRC:
-    mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
-      "5":
-        database: COALESCE_SAMPLE_DATABASE
-        schema: TPCH_SF001
-      "6":
-        database: COALESCE_SAMPLE_DATABASE
-        schema: TPCH_SF001
-  STG:
-    mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
-      "5":
+        schema: QA_DATA_MART
+      "7":
         database: BEI_LOCALHOST
-        schema: PROD_RAW
+        schema: PROD_DATA_MART
+  RAW:
+    mappingDefinitions:
       "6":
         database: BEI_LOCALHOST
         schema: QA_RAW
+      "7":
+        database: BEI_LOCALHOST
+        schema: PROD_RAW
+  SRC:
+    mappingDefinitions:
+      "4":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
+      "5":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
+      "6":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
+      "7":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
+  STAGING:
+    mappingDefinitions:
+      "6":
+        database: BEI_LOCALHOST
+        schema: QA_STAGING
+      "7":
+        database: BEI_LOCALHOST
+        schema: PROD_STAGING
 macros: {}
 packages: {}
 projects: {}

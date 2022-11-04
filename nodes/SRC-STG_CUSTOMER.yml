@@ -1,5 +1,5 @@
 steps:
-  STG_CUSTOMER-89:
+  STG_CUSTOMER-10:
     operation:
       config:
         insertStrategy: INSERT
@@ -14,14 +14,14 @@ steps:
       isDataVault: false
       isMultisource: false
       locationID: ""
-      locationName: STG
+      locationName: SRC
       materializationType: table
       metadata:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 659
-              stepCounter: "89"
+              columnCounter: 64
+              stepCounter: "10"
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -30,12 +30,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 596
-                    stepCounter: "80"
+                  - columnCounter: 1
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 660
-              stepCounter: "89"
+              columnCounter: 65
+              stepCounter: "10"
             dataType: VARCHAR(25)
             description: ""
             hashColumns: []
@@ -44,12 +44,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 597
-                    stepCounter: "80"
+                  - columnCounter: 2
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 661
-              stepCounter: "89"
+              columnCounter: 66
+              stepCounter: "10"
             dataType: VARCHAR(40)
             description: ""
             hashColumns: []
@@ -58,12 +58,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 598
-                    stepCounter: "80"
+                  - columnCounter: 3
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 662
-              stepCounter: "89"
+              columnCounter: 67
+              stepCounter: "10"
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -72,12 +72,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 599
-                    stepCounter: "80"
+                  - columnCounter: 4
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 663
-              stepCounter: "89"
+              columnCounter: 68
+              stepCounter: "10"
             dataType: VARCHAR(15)
             description: ""
             hashColumns: []
@@ -86,12 +86,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 600
-                    stepCounter: "80"
+                  - columnCounter: 5
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 664
-              stepCounter: "89"
+              columnCounter: 69
+              stepCounter: "10"
             dataType: NUMBER(12,2)
             description: ""
             hashColumns: []
@@ -100,12 +100,12 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 601
-                    stepCounter: "80"
+                  - columnCounter: 6
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 665
-              stepCounter: "89"
+              columnCounter: 70
+              stepCounter: "10"
             dataType: VARCHAR(10)
             description: ""
             hashColumns: []
@@ -114,12 +114,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 602
-                    stepCounter: "80"
+                  - columnCounter: 7
+                    stepCounter: "1"
                 transform: ""
           - columnReference:
-              columnCounter: 666
-              stepCounter: "89"
+              columnCounter: 71
+              stepCounter: "10"
             dataType: VARCHAR(117)
             description: ""
             hashColumns: []
@@ -128,8 +128,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 603
-                    stepCounter: "80"
+                  - columnCounter: 8
+                    stepCounter: "1"
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -148,4 +148,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: "89"
+    stepCounter: "10"

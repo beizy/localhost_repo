@@ -1,5 +1,5 @@
 steps:
-  PART-85:
+  PART-6:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 635
-              stepCounter: 85
+              columnCounter: 40
+              stepCounter: 6
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 636
-              stepCounter: 85
+              columnCounter: 41
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(55)
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 637
-              stepCounter: 85
+              columnCounter: 42
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(25)
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 638
-              stepCounter: 85
+              columnCounter: 43
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(10)
             defaultValue: ""
@@ -73,8 +73,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 639
-              stepCounter: 85
+              columnCounter: 44
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(25)
             defaultValue: ""
@@ -88,8 +88,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 640
-              stepCounter: 85
+              columnCounter: 45
+              stepCounter: 6
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -103,8 +103,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 641
-              stepCounter: 85
+              columnCounter: 46
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(10)
             defaultValue: ""
@@ -118,8 +118,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 642
-              stepCounter: 85
+              columnCounter: 47
+              stepCounter: 6
             config: {}
             dataType: NUMBER(12,2)
             defaultValue: ""
@@ -133,8 +133,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 643
-              stepCounter: 85
+              columnCounter: 48
+              stepCounter: 6
             config: {}
             dataType: VARCHAR(23)
             defaultValue: ""
@@ -150,4 +150,4 @@ steps:
       sqlType: Source
       table: PART
       type: sourceInput
-    stepCounter: "85"
+    stepCounter: "6"

@@ -1,5 +1,5 @@
 steps:
-  DAILY_14_TOTAL_SHORT-81:
+  DAILY_14_TOTAL_SHORT-2:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 604
-              stepCounter: 81
+              columnCounter: 9
+              stepCounter: 2
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 605
-              stepCounter: 81
+              columnCounter: 10
+              stepCounter: 2
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -45,4 +45,4 @@ steps:
       sqlType: Source
       table: DAILY_14_TOTAL_SHORT
       type: sourceInput
-    stepCounter: "81"
+    stepCounter: "2"

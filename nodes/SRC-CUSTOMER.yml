@@ -1,5 +1,5 @@
 steps:
-  CUSTOMER-80:
+  CUSTOMER-1:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 596
-              stepCounter: 80
+              columnCounter: 1
+              stepCounter: 1
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 597
-              stepCounter: 80
+              columnCounter: 2
+              stepCounter: 1
             config: {}
             dataType: VARCHAR(25)
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 598
-              stepCounter: 80
+              columnCounter: 3
+              stepCounter: 1
             config: {}
             dataType: VARCHAR(40)
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 599
-              stepCounter: 80
+              columnCounter: 4
+              stepCounter: 1
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -73,8 +73,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 600
-              stepCounter: 80
+              columnCounter: 5
+              stepCounter: 1
             config: {}
             dataType: VARCHAR(15)
             defaultValue: ""
@@ -88,8 +88,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 601
-              stepCounter: 80
+              columnCounter: 6
+              stepCounter: 1
             config: {}
             dataType: NUMBER(12,2)
             defaultValue: ""
@@ -103,8 +103,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 602
-              stepCounter: 80
+              columnCounter: 7
+              stepCounter: 1
             config: {}
             dataType: VARCHAR(10)
             defaultValue: ""
@@ -118,8 +118,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 603
-              stepCounter: 80
+              columnCounter: 8
+              stepCounter: 1
             config: {}
             dataType: VARCHAR(117)
             defaultValue: ""
@@ -135,4 +135,4 @@ steps:
       sqlType: Source
       table: CUSTOMER
       type: sourceInput
-    stepCounter: "80"
+    stepCounter: "1"
