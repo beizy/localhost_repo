@@ -3,9 +3,6 @@ jobs: {}
 locations:
   QA:
     mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
       "5":
         database: BEI_LOCALHOST
         schema: PROD_STAGING
@@ -14,9 +11,6 @@ locations:
         schema: QA_STAGING
   SRC:
     mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
       "5":
         database: COALESCE_SAMPLE_DATABASE
         schema: TPCH_SF001
@@ -25,9 +19,6 @@ locations:
         schema: TPCH_SF001
   STG:
     mappingDefinitions:
-      "2":
-        database: ""
-        schema: ""
       "5":
         database: BEI_LOCALHOST
         schema: PROD_RAW
@@ -1976,5 +1967,10 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-2:
+    id: 2
+    name: New Sub-Graph
+    steps:
+      - "89"
 version: 1
