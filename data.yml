@@ -1968,6 +1968,10 @@ stepTypes:
     name: Persistent Stage
     version: 1
 subgraphs:
+  Subgraph-19:
+    id: 19
+    name: New Sub-Graph
+    steps: []
   Subgraph-2:
     id: 2
     name: New Sub-Graph
