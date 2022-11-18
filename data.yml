@@ -1,4 +1,4 @@
-defaultStorageMapping: SRC
+defaultStorageMapping: RAW
 jobs: {}
 locations:
   DATAMART:
