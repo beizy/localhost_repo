@@ -12,7 +12,7 @@ steps:
       deployEnabled: true
       description: ""
       isDataVault: false
-      isMultisource: false
+      isMultisource: true
       locationID: ""
       locationName: RAW
       materializationType: table
@@ -31,13 +31,13 @@ steps:
             defaultValue: ""
             description: ""
             keyColumnType: None
-            name: My_Col
+            name: My_Col_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 363
                     stepCounter: "45"
-                transform: ""
+                transform: "3"
             systemColumnType: None
             transform: ""
           - acceptedValues:
@@ -52,19 +52,19 @@ steps:
             defaultValue: ""
             description: ""
             keyColumnType: None
-            name: My_Col2
+            name: My_Col2_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 360
                     stepCounter: "44"
-                transform: ""
+                transform: "3"
             systemColumnType: None
             transform: ""
-        cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases: {}
+            customSQL:
               customSQL: ""
             dependencies: []
             join:
@@ -74,6 +74,6 @@ steps:
       name: Test_same_name
       overrideSQL: false
       schema: ""
-      sqlType: "1"
+      sqlType: Stage
       type: sql
     stepCounter: "46"

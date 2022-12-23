@@ -26,13 +26,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_PARTKEY
+            name: PS_PARTKEY_hee_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 97
                     stepCounter: "14"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 246
               stepCounter: "34"
@@ -40,13 +40,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_SUPPKEY
+            name: PS_SUPPKEY_hee_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 98
                     stepCounter: "14"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 247
               stepCounter: "34"
@@ -54,13 +54,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_AVAILQTY
+            name: PS_AVAILQTY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 99
                     stepCounter: "14"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 248
               stepCounter: "34"
@@ -68,13 +68,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_SUPPLYCOST
+            name: PS_SUPPLYCOST_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 100
                     stepCounter: "14"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 249
               stepCounter: "34"
@@ -82,13 +82,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_COMMENT
+            name: PS_COMMENT_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 101
                     stepCounter: "14"
-                transform: ""
+                transform: "3"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

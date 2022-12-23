@@ -26,17 +26,17 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: P_PARTKEY
+            name: P_PARTKEY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 376
                     stepCounter: "48"
-                transform: ""
+                transform: "3"
               - columnReferences:
                   - columnCounter: 367
                     stepCounter: "47"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 380
               stepCounter: "49"
@@ -44,17 +44,17 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: P_NAME
+            name: P_NAME_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 377
                     stepCounter: "48"
-                transform: ""
+                transform: "3"
               - columnReferences:
                   - columnCounter: 368
                     stepCounter: "47"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 381
               stepCounter: "49"
@@ -62,17 +62,17 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: P_MFGR
+            name: P_MFGR_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 378
                     stepCounter: "48"
-                transform: ""
+                transform: "3"
               - columnReferences:
                   - columnCounter: 369
                     stepCounter: "47"
-                transform: ""
+                transform: "3"
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:

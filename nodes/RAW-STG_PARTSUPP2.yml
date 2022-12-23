@@ -1,10 +1,12 @@
 steps:
-  DIM_PARTSUPP_PARTSUPP-37:
+  STG_PARTSUPP2-71:
     operation:
       config:
+        insertStrategy: INSERT
         postSQL: ""
         preSQL: ""
         testsEnabled: true
+        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: true
@@ -17,27 +19,9 @@ steps:
       metadata:
         appliedNodeTests: []
         columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 276
-              stepCounter: "37"
-            config: {}
-            dataType: NUMBER
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSurrogateKey: true
-            name: DIM_PARTSUPP_PARTSUPP_KEY_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
           - columnReference:
-              columnCounter: 277
-              stepCounter: "37"
+              columnCounter: 460
+              stepCounter: "71"
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -50,8 +34,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 278
-              stepCounter: "37"
+              columnCounter: 461
+              stepCounter: "71"
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -64,8 +48,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 279
-              stepCounter: "37"
+              columnCounter: 462
+              stepCounter: "71"
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -78,8 +62,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 280
-              stepCounter: "37"
+              columnCounter: 463
+              stepCounter: "71"
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
@@ -92,8 +76,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 281
-              stepCounter: "37"
+              columnCounter: 464
+              stepCounter: "71"
             dataType: NUMBER(12,2)
             description: ""
             hashColumns: []
@@ -106,8 +90,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 282
-              stepCounter: "37"
+              columnCounter: 465
+              stepCounter: "71"
             dataType: VARCHAR(199)
             description: ""
             hashColumns: []
@@ -120,8 +104,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 283
-              stepCounter: "37"
+              columnCounter: 466
+              stepCounter: "71"
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -134,8 +118,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 284
-              stepCounter: "37"
+              columnCounter: 467
+              stepCounter: "71"
             dataType: VARCHAR
             description: ""
             hashColumns: []
@@ -148,8 +132,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 285
-              stepCounter: "37"
+              columnCounter: 468
+              stepCounter: "71"
             dataType: TIMESTAMP
             description: ""
             hashColumns: []
@@ -162,8 +146,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 286
-              stepCounter: "37"
+              columnCounter: 469
+              stepCounter: "71"
             dataType: TIMESTAMP
             description: ""
             hashColumns: []
@@ -176,8 +160,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 287
-              stepCounter: "37"
+              columnCounter: 470
+              stepCounter: "71"
             dataType: TIMESTAMP
             description: ""
             hashColumns: []
@@ -190,8 +174,8 @@ steps:
                     stepCounter: "35"
                 transform: "3"
           - columnReference:
-              columnCounter: 288
-              stepCounter: "37"
+              columnCounter: 471
+              stepCounter: "71"
             dataType: TIMESTAMP
             description: ""
             hashColumns: []
@@ -203,135 +187,21 @@ steps:
                   - columnCounter: 261
                     stepCounter: "35"
                 transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 289
-              stepCounter: "37"
-            config: {}
-            dataType: NUMBER
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemVersion: true
-            name: SYSTEM_VERSION_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 290
-              stepCounter: "37"
-            config: {}
-            dataType: VARCHAR
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemCurrentFlag: true
-            name: SYSTEM_CURRENT_FLAG_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 291
-              stepCounter: "37"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemStartDate: true
-            name: SYSTEM_START_DATE_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 292
-              stepCounter: "37"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemEndDate: true
-            name: SYSTEM_END_DATE_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 293
-              stepCounter: "37"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemCreateDate: true
-            name: SYSTEM_CREATE_DATE_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 294
-              stepCounter: "37"
-            config: {}
-            dataType: TIMESTAMP
-            defaultValue: ""
-            description: ""
-            hashColumns: []
-            isSystemUpdateDate: true
-            name: SYSTEM_UPDATE_DATE_hah_friday
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "3"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases: {}
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: RAW
-                nodeName: STG_PARTSUPP
-              - locationName: RAW
                 nodeName: DIM_PARTSUPP
             join:
-              joinCondition: |-
-                FROM {{ ref('RAW', 'STG_PARTSUPP') }} "STG_PARTSUPP"
-                LEFT JOIN {{ ref('RAW', 'DIM_PARTSUPP') }} "DIM_PARTSUPP"
-                ON "STG_PARTSUPP"./*COLUMN*/ = "DIM_PARTSUPP"./*COLUMN*/
-            name: DIM_PARTSUPP_PARTSUPP
+              joinCondition: FROM {{ ref('RAW', 'DIM_PARTSUPP') }} "DIM_PARTSUPP"
+            name: STG_PARTSUPP2
             noLinkRefs: []
-      name: DIM_PARTSUPP_PARTSUPP
+      name: STG_PARTSUPP2
       overrideSQL: false
       schema: ""
-      sqlType: Dimension
+      sqlType: Stage
       type: sql
-    stepCounter: "37"
+    stepCounter: "71"

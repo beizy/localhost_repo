@@ -30,11 +30,11 @@ steps:
             description: ""
             hashColumns: []
             isSurrogateKey: true
-            name: DIM_PARTSUPP_KEY
+            name: DIM_PARTSUPP_KEY_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 251
               stepCounter: "35"
@@ -42,13 +42,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_PARTKEY
+            name: PS_PARTKEY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 245
                     stepCounter: "34"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 252
               stepCounter: "35"
@@ -56,13 +56,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_SUPPKEY
+            name: PS_SUPPKEY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 246
                     stepCounter: "34"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 253
               stepCounter: "35"
@@ -70,13 +70,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_AVAILQTY
+            name: PS_AVAILQTY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 247
                     stepCounter: "34"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 254
               stepCounter: "35"
@@ -84,13 +84,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_SUPPLYCOST
+            name: PS_SUPPLYCOST_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 248
                     stepCounter: "34"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 255
               stepCounter: "35"
@@ -98,13 +98,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: PS_COMMENT
+            name: PS_COMMENT_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 249
                     stepCounter: "34"
-                transform: ""
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -118,11 +118,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemVersion: true
-            name: SYSTEM_VERSION
+            name: SYSTEM_VERSION_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: ""
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -136,11 +136,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemCurrentFlag: true
-            name: SYSTEM_CURRENT_FLAG
+            name: SYSTEM_CURRENT_FLAG_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: ""
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -154,11 +154,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemStartDate: true
-            name: SYSTEM_START_DATE
+            name: SYSTEM_START_DATE_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -172,11 +172,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemEndDate: true
-            name: SYSTEM_END_DATE
+            name: SYSTEM_END_DATE_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -190,11 +190,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemCreateDate: true
-            name: SYSTEM_CREATE_DATE
+            name: SYSTEM_CREATE_DATE_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+                transform: "3"
           - acceptedValues:
               strictMatch: true
               values: []
@@ -208,11 +208,11 @@ steps:
             description: ""
             hashColumns: []
             isSystemUpdateDate: true
-            name: SYSTEM_UPDATE_DATE
+            name: SYSTEM_UPDATE_DATE_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+                transform: "3"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

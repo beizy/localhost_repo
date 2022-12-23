@@ -26,13 +26,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: R_REGIONKEY
+            name: R_REGIONKEY_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 102
                     stepCounter: "15"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 363
               stepCounter: "45"
@@ -40,13 +40,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: R_NAME
+            name: R_NAME_hah_friday
             nullable: false
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 103
                     stepCounter: "15"
-                transform: ""
+                transform: "3"
           - columnReference:
               columnCounter: 364
               stepCounter: "45"
@@ -54,13 +54,13 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
-            name: R_COMMENT
+            name: R_COMMENT_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 104
                     stepCounter: "15"
-                transform: ""
+                transform: "3"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -76,6 +76,6 @@ steps:
       name: Same_name
       overrideSQL: false
       schema: ""
-      sqlType: Stage
+      sqlType: "1"
       type: sql
     stepCounter: "45"

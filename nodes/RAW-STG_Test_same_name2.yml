@@ -1,5 +1,5 @@
 steps:
-  Same_name-44:
+  STG_Test_same_name2-82:
     operation:
       config:
         insertStrategy: INSERT
@@ -20,46 +20,32 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 359
-              stepCounter: "44"
-            dataType: NUMBER(38,0)
+              columnCounter: 523
+              stepCounter: "82"
+            dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: R_REGIONKEY_hah_friday
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 102
-                    stepCounter: "15"
-                transform: "3"
-          - columnReference:
-              columnCounter: 360
-              stepCounter: "44"
-            dataType: VARCHAR(25)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: R_NAME_hah_friday
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 103
-                    stepCounter: "15"
-                transform: "3"
-          - columnReference:
-              columnCounter: 361
-              stepCounter: "44"
-            dataType: VARCHAR(152)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: R_COMMENT_hah_friday
+            name: My_Col_hah_friday
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 104
-                    stepCounter: "15"
+                  - columnCounter: 448
+                    stepCounter: "66"
+                transform: "3"
+          - columnReference:
+              columnCounter: 524
+              stepCounter: "82"
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: My_Col2_hah_friday
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 449
+                    stepCounter: "66"
                 transform: "3"
         cteString: ""
         enabledColumnTestIDs: []
@@ -67,15 +53,15 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: SRC
-                nodeName: REGION
+              - locationName: RAW
+                nodeName: STG_Test_same_name
             join:
-              joinCondition: FROM {{ ref('SRC', 'REGION') }} "REGION"
-            name: Same_name
+              joinCondition: FROM {{ ref('RAW', 'STG_Test_same_name') }} "STG_Test_same_name"
+            name: STG_Test_same_name2
             noLinkRefs: []
-      name: Same_name
+      name: STG_Test_same_name2
       overrideSQL: false
       schema: ""
       sqlType: "1"
       type: sql
-    stepCounter: "44"
+    stepCounter: "82"
