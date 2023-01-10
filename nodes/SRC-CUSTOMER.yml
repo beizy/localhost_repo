@@ -1,9 +1,10 @@
 steps:
-  SUPPLIER-16:
+  CUSTOMER-92:
     operation:
       database: ""
       dataset: ""
       deployEnabled: true
+      description: ""
       locationID: ""
       locationName: SRC
       metadata:
@@ -13,13 +14,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 105
-              stepCounter: 16
+              columnCounter: 576
+              stepCounter: 92
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
-            description: ""
-            name: S_SUPPKEY
+            description: SF*150,000 are populated
+            name: C_CUSTKEY
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -28,13 +29,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 106
-              stepCounter: 16
+              columnCounter: 577
+              stepCounter: 92
             config: {}
             dataType: VARCHAR(25)
             defaultValue: ""
             description: ""
-            name: S_NAME
+            name: C_NAME
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -43,13 +44,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 107
-              stepCounter: 16
+              columnCounter: 578
+              stepCounter: 92
             config: {}
             dataType: VARCHAR(40)
             defaultValue: ""
             description: ""
-            name: S_ADDRESS
+            name: C_ADDRESS
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -58,13 +59,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 108
-              stepCounter: 16
+              columnCounter: 579
+              stepCounter: 92
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
-            description: ""
-            name: S_NATIONKEY
+            description: Foreign Key to N_NATIONKEY
+            name: C_NATIONKEY
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -73,13 +74,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 109
-              stepCounter: 16
+              columnCounter: 580
+              stepCounter: 92
             config: {}
             dataType: VARCHAR(15)
             defaultValue: ""
             description: ""
-            name: S_PHONE
+            name: C_PHONE
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -88,13 +89,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 110
-              stepCounter: 16
+              columnCounter: 581
+              stepCounter: 92
             config: {}
             dataType: NUMBER(12,2)
             defaultValue: ""
             description: ""
-            name: S_ACCTBAL
+            name: C_ACCTBAL
             nullable: false
             primaryKey: false
             uniqueKey: false
@@ -103,21 +104,36 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 111
-              stepCounter: 16
+              columnCounter: 582
+              stepCounter: 92
             config: {}
-            dataType: VARCHAR(101)
+            dataType: VARCHAR(10)
             defaultValue: ""
             description: ""
-            name: S_COMMENT
+            name: C_MKTSEGMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 583
+              stepCounter: 92
+            config: {}
+            dataType: VARCHAR(117)
+            defaultValue: ""
+            description: ""
+            name: C_COMMENT
             nullable: true
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SRC', 'SUPPLIER') }}
-      name: SUPPLIER
+          joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }}
+      name: CUSTOMER
       schema: ""
       sqlType: Source
-      table: SUPPLIER
+      table: CUSTOMER
       type: sourceInput
-    stepCounter: "16"
+    stepCounter: "92"
