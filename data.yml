@@ -1,14 +1,6 @@
 defaultStorageMapping: RAW
 jobs: {}
 locations:
-  "5015":
-    mappingDefinitions:
-      "6":
-        database: ""
-        schema: ""
-      "7":
-        database: ""
-        schema: ""
   DATAMART:
     mappingDefinitions:
       "6":
