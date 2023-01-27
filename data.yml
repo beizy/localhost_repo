@@ -1,6 +1,14 @@
 defaultStorageMapping: RAW
 jobs: {}
 locations:
+  "5015":
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
   DATAMART:
     mappingDefinitions:
       "6":
@@ -2208,5 +2216,9 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-21:
+    id: "21"
+    name: New Subgraph
+    steps: []
 version: 1
