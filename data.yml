@@ -2224,15 +2224,14 @@ stepTypes:
     version: 1
 subgraphs:
   Subgraph-21:
-    id: "21"
+    id: 21
     name: sub1
     steps:
-      - "95"
       - 3894fad0-7cde-4e12-892c-54c684910158
       - db857121-0cf6-457e-8410-82c992f04576
       - 249a3894-3715-422b-a826-d3781176b5f7
   Subgraph-22:
-    id: "22"
+    id: 22
     name: Sub2
     steps: []
 version: 1
