@@ -23,14 +23,6 @@ locations:
       "7":
         database: BEI_LOCALHOST
         schema: PROD_DATA_MART
-  JASON:
-    mappingDefinitions:
-      "6":
-        database: ""
-        schema: ""
-      "7":
-        database: ""
-        schema: ""
   RAW:
     mappingDefinitions:
       "6":
@@ -61,14 +53,6 @@ locations:
       "7":
         database: BEI_LOCALHOST
         schema: PROD_STAGING
-  XML:
-    mappingDefinitions:
-      "6":
-        database: ""
-        schema: ""
-      "7":
-        database: ""
-        schema: ""
 macros:
   Macro-1:
     id: "1"
