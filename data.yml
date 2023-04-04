@@ -23,6 +23,86 @@ locations:
       "7":
         database: BEI_LOCALHOST
         schema: PROD_DATA_MART
+  LOC1:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC10:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC2:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC3:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC4:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC5:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC6:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC7:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC8:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+  LOC9:
+    mappingDefinitions:
+      "6":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
   RAW:
     mappingDefinitions:
       "6":
@@ -56,15 +136,12 @@ locations:
 macros:
   Macro-1:
     id: "1"
-    macroString: |-
-      {%- macro foo() -%}
-          HELLO
-      {%- endmacro -%}
+    macroString: ""
 packages: {}
 projects: {}
 stepTypes:
-  StepType-1:
-    id: "1"
+  StepType-5:
+    id: "5"
     isDisabled: false
     metadata:
       defaultStorageLocation: null
@@ -83,6 +160,7 @@ stepTypes:
             options:
             - table
             - view
+            - materialized view
             isRequired: true
 
           - type: multisourceToggle
@@ -140,11 +218,11 @@ stepTypes:
             			{%- if not col.nullable %} NOT NULL
             				{%- if col.defaultValue | length > 0 %} DEFAULT {{ col.defaultValue }}{% endif %}
             			{% endif %}
-            			{%- if col.description | length > 0 %} COMMENT '{{ col.description }}'{% endif %}
+            			{%- if col.description | length > 0 %} COMMENT '{{ col.description | escape }}'{% endif %}
             			{%- if not loop.last -%}, {% endif %}
             		{% endfor %}
             	)
-            	{%- if node.description | length > 0 %} COMMENT = '{{ node.description }}'{% endif %}
+            	{%- if node.description | length > 0 %} COMMENT = '{{ node.description | escape }}'{% endif %}
 
 
             {% elif node.materializationType == 'view' %}
@@ -154,11 +232,11 @@ stepTypes:
                 (
                     {% for col in columns %}
                         "{{ col.name }}"
-                        {%- if col.description | length > 0 %} COMMENT '{{ col.description }}'{% endif %}
+                        {%- if col.description | length > 0 %} COMMENT '{{ col.description | escape }}'{% endif %}
                         {%- if not loop.last -%}, {% endif %}
                     {% endfor %}
                 )
-                {%- if node.description | length > 0 %} COMMENT = '{{ node.description }}'{% endif %}
+                {%- if node.description | length > 0 %} COMMENT = '{{ node.description | escape }}'{% endif %}
                 AS
                 {% for source in sources %}
                     SELECT
@@ -2208,14 +2286,14 @@ stepTypes:
     version: 1
 subgraphs:
   Subgraph-21:
-    id: 21
+    id: "21"
     name: sub1
     steps:
       - 3894fad0-7cde-4e12-892c-54c684910158
       - db857121-0cf6-457e-8410-82c992f04576
       - 249a3894-3715-422b-a826-d3781176b5f7
   Subgraph-22:
-    id: 22
+    id: "22"
     name: Sub2
     steps: []
 version: 1
