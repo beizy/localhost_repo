@@ -3,10 +3,10 @@ steps:
     operation:
       database: ""
       dataset: ""
-      deployEnabled: true
+      deployEnabled: false
       description: ""
       locationID: ""
-      locationName: SRC
+      locationName: DATAMART
       metadata:
         columns:
           - acceptedValues:
