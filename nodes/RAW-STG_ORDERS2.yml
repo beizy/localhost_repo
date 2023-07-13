@@ -30,10 +30,6 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 959326aa-ee56-448e-a7dd-7c604989bea8
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: hee
-              - columnReferences:
                   - columnCounter: fb8d18a5-ad44-491e-b51c-e46f3fc62729
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
                 transform: hoe
@@ -47,10 +43,6 @@ steps:
             name: O_CUSTKEY
             nullable: true
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 3801393a-e43e-4294-9f6c-e51e0862636c
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
               - columnReferences:
                   - columnCounter: d1347405-d73b-46aa-89b8-d81424b42a90
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
@@ -66,10 +58,6 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 27d8ab10-64a6-48c5-8365-4427f46dd06d
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
-              - columnReferences:
                   - columnCounter: 68c9ea94-5f9b-45b1-a18f-e998694079da
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
                 transform: ""
@@ -83,10 +71,6 @@ steps:
             name: O_TOTALPRICE
             nullable: false
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: a4319544-2fc1-43a7-a2e2-de9d5c51e6c7
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
               - columnReferences:
                   - columnCounter: 3232d735-8352-4965-b9a9-fbff362a95f4
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
@@ -102,10 +86,6 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 63f51324-e513-4cb1-b04c-4311d308eb18
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
-              - columnReferences:
                   - columnCounter: c8237dc9-704a-45a1-a733-b67f6dd402e1
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
                 transform: ""
@@ -119,10 +99,6 @@ steps:
             name: O_ORDERPRIORITY
             nullable: false
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: df439e99-fd38-41df-9e5c-f9cb648fca4e
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
               - columnReferences:
                   - columnCounter: f25009d6-f471-424e-b6e6-522ff73cf906
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
@@ -138,10 +114,6 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5abd5b21-50be-45cc-9845-9decf4f830aa
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
-              - columnReferences:
                   - columnCounter: 873c0ce8-98ab-4a52-95e1-89a2587485ce
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
                 transform: ""
@@ -155,10 +127,6 @@ steps:
             name: O_SHIPPRIORITY
             nullable: false
             sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: d3f1bde4-d86d-40ff-8546-2cc0be08d1ee
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
               - columnReferences:
                   - columnCounter: e21ce1df-3825-45b3-a482-8c593e925289
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
@@ -174,26 +142,11 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 9df686a4-fe60-4afe-b16c-21a2852c26c7
-                    stepCounter: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-                transform: ""
-              - columnReferences:
                   - columnCounter: 33f66423-f446-4bef-ad9a-1ea167388d17
                     stepCounter: 9fad03fa-e176-49d1-8b7f-518569632f81
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              STG_ORDERS: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
-            customSQL:
-              customSQL: ""
-            dependencies:
-              - locationName: RAW
-                nodeName: STG_ORDERS
-            join:
-              joinCondition: FROM {{ ref('RAW', 'STG_ORDERS') }} "STG_ORDERS"
-            name: STG_ORDERS2
-            noLinkRefs: []
           - aliases:
               STG_ORDERS1: 9fad03fa-e176-49d1-8b7f-518569632f81
             customSQL:
