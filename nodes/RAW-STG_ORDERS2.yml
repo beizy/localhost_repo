@@ -183,7 +183,9 @@ steps:
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              STG_ORDERS: 1aa6b238-1753-4ce5-bf88-d6632abd47d5
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: RAW
@@ -192,11 +194,15 @@ steps:
               joinCondition: FROM {{ ref('RAW', 'STG_ORDERS') }} "STG_ORDERS"
             name: STG_ORDERS2
             noLinkRefs: []
-          - customSQL:
+          - aliases:
+              STG_ORDERS1: 9fad03fa-e176-49d1-8b7f-518569632f81
+            customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: RAW
+                nodeName: STG_ORDERS1
             join:
-              joinCondition: ""
+              joinCondition: FROM {{ ref('RAW', 'STG_ORDERS1') }} "STG_ORDERS1"
             name: NEW_SOURCE
             noLinkRefs: []
       name: STG_ORDERS2
